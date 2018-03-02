@@ -1,0 +1,7 @@
+[caps]
+platformName = "iOS"
+automationName = "XCUITest"
+platformVersion = "10.3"
+deviceName = "iPhone 8"
+udid = "A2E4E048-054C-412A-AC23-4C0D86AEA87E"
+app = "/Users/pedroafonso/workspace/ruby/appium-example/app/SimpleCalculator.app"

@@ -1,0 +1,7 @@
+[caps]
+platformName = "Android"
+deviceName = '192.168.56.101:5555'
+app = '/Users/pedroafonso/workspace/ruby/appium-example/app/app-android-calculator.apk'
+appPackage = 'com.example.leonardomenezes.simplecalculatorandroid'
+autoGrantPermissions = true
+newCommandTimeout = 50

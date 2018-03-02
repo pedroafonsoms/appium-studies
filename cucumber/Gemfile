@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gem 'appium_lib', '9.7.4'
+gem 'appium_console'
+gem 'cucumber'
+gem 'rspec-expectations'
