@@ -1,4 +1,3 @@
-
 require 'appium_lib'
 require 'pry'
 
@@ -6,8 +5,9 @@ require 'pry'
 class AppiumWorld
 end
 
-caps_path = File.join(File.dirname(__FILE__), '..', '..', 'caps', "#{ENV['PLATFORM'].downcase}.txt")
-caps = Appium.load_appium_txt file: caps_path, verbose: true
+caps = Appium.load_appium_txt\
+  file: File.expand_path("../../../caps/#{ENV['PLATFORM']}.txt", __FILE__),\
+  verbose: true
 
 Appium::Driver.new(caps, true)
 Appium.promote_appium_methods AppiumWorld
@@ -17,6 +17,6 @@ World do
   AppiumWorld.new
 end
 
-Before { $driver.start_driver }
+Before { start_driver }
 
-After { $driver.driver_quit }
+After { driver_quit }

@@ -1,7 +1,14 @@
 [caps]
-platformName = "Android"
-deviceName = '192.168.56.101:5555'
-app = '/Users/pedroafonso/workspace/ruby/appium-example/app/app-android-calculator.apk'
+platformName = 'Android'
+
+deviceName = 'emulator-5554'
+
+app = '../app/app-android-calculator.apk'
+
 appPackage = 'com.example.leonardomenezes.simplecalculatorandroid'
+
 autoGrantPermissions = true
+
+automationName = 'UiAutomator2'
+
 newCommandTimeout = 50
