@@ -23,4 +23,4 @@ Funcionalidade: Calculadora
         Dado que preencha o primeiro valor valido
         E o segundo valor com 0
         Quando selecionar Divide
-        Entao deve ser apresentado mensagem 'Cannot divide by zero!'
+        Entao deve ser apresentado mensagem 'Cannot divide by!'

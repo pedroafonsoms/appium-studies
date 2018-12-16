@@ -4,3 +4,5 @@
 android: PLATFORM=Android --exclude features/screens/ios
 
 ios: PLATFORM=iOS --exclude features/screens/android
+
+report: --format AllureCucumber::Formatter --out report/

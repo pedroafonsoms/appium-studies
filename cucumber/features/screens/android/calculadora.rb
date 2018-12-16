@@ -1,3 +1,4 @@
+
 class Calculadora
 
   attr_reader :view
@@ -6,7 +7,7 @@ class Calculadora
   attr_reader :button_sum
   attr_reader :result_text
 
-  def initialize(timeout=50)
+  def initialize(timeout = 50)
     fill_variables
     # begin
     #   wait_true(timeout) { $driver.exists { $driver.find_element :id, @view } }
@@ -17,7 +18,7 @@ class Calculadora
 
   def fill_variables
     @view = 'navigationBarBackground'
-    @first_field = 'android_field_first_number' 
+    @first_field = 'android_field_first_number'
     @second_field = 'android_field_second_number'
     @button_sum = 'android_button_sum'
     @button_subtract = 'android_button_sub'
@@ -45,8 +46,7 @@ class Calculadora
     $driver.find_element(:id, @button_divide).click
   end
 
-  def text 
+  def text
     $driver.find_element(:id, @result_text).text
   end
-
 end
